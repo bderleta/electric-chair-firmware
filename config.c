@@ -4,6 +4,7 @@
  */
 
 #include "config.h"
+#include <ctype.h>
 
 static FILE usart1_out_stream = FDEV_SETUP_STREAM(usart1_putc, NULL, _FDEV_SETUP_WRITE);
 
@@ -17,12 +18,7 @@ int usart1_gets(char* buf, const unsigned int buf_size) {
         if (data == '\r') {
             usart1_putc('\n', NULL);
             break;
-        } else if (
-            ((data >= 'a') && (data <= 'z')) ||
-            ((data >= 'A') && (data <= 'Z')) ||
-            ((data >= '0') && (data <= '9')) ||
-            (data == ' ')
-        ) {
+        } else if (isalpha(data) || isdigit(data) || data == ' ') {
             buf[read++] = data;
             usart1_putc(data, NULL);
         } else if ((data == 0x08) && (read > 0)) {
