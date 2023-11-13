@@ -1,0 +1,7 @@
+*.log
+*.log.*
+.generated_files
+queuelogs/
+build/
+dist/
+nbproject/private
