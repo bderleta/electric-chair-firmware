@@ -31,6 +31,8 @@ Command to read/write fuses. When no additional options are passed, fuse/lock bi
 
 When device signature is present in the built-in database, it reverts all fusebits to the factory settings.
 
+![Work example](view.png)
+
 ## License
 
 This code is GPL-3.0 licensed. It means that every derived work also has to be GPL-3.0 licensed and freely available.
