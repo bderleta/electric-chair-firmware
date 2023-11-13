@@ -1,8 +1,6 @@
 /* 
  * File:   avr_database.h
- * Author: barto
- *
- * Created on 8 listopada 2023, 21:50
+ * Author: Bartosz Derleta <bartosz@derleta.com>
  */
 
 #ifndef AVR_DATABASE_H

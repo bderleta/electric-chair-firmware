@@ -1,3 +1,8 @@
+/*
+ * File:   config.c
+ * Author: Bartosz Derleta <bartosz@derleta.com>
+ */
+
 #include "config.h"
 
 static FILE usart0_out_stream = FDEV_SETUP_STREAM(usart1_putc, NULL, _FDEV_SETUP_WRITE);

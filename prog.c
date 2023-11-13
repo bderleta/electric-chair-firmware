@@ -1,3 +1,8 @@
+/*
+ * File:   prog.c
+ * Author: Bartosz Derleta <bartosz@derleta.com>
+ */
+
 #include "prog.h"
 
 void read_signature(uint32_t* signature) {

@@ -1,8 +1,6 @@
 /*
  * File:   main.c
- * Author: barto
- *
- * Created on 6 listopada 2023, 20:26
+ * Author: Bartosz Derleta <bartosz@derleta.com>
  */
 
 #include "config.h"

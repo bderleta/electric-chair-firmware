@@ -1,8 +1,6 @@
 /* 
  * File:   config.h
- * Author: barto
- *
- * Created on 6 listopada 2023, 20:27
+ * Author: Bartosz Derleta <bartosz@derleta.com>
  */
 
 #ifndef CONFIG_H

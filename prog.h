@@ -1,8 +1,6 @@
 /* 
  * File:   prog.h
- * Author: barto
- *
- * Created on 6 listopada 2023, 23:36
+ * Author: Bartosz Derleta <bartosz@derleta.com>
  */
 
 #ifndef PROG_H
