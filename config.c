@@ -5,7 +5,7 @@
 
 #include "config.h"
 
-static FILE usart0_out_stream = FDEV_SETUP_STREAM(usart1_putc, NULL, _FDEV_SETUP_WRITE);
+static FILE usart1_out_stream = FDEV_SETUP_STREAM(usart1_putc, NULL, _FDEV_SETUP_WRITE);
 
 int usart1_gets(char* buf, const unsigned int buf_size) {
     unsigned int read = 0;
@@ -114,7 +114,7 @@ void portf_control(void) {
 }
 
 /** USART1                  Debug UART
- * - Baud rate USART0_BAUDRATE, 8 data bit, 1 stop bit, no parity
+ * - Baud rate USART1_BAUDRATE, 8 data bit, 1 stop bit, no parity
  * - MSb of the data word is transmitted first
  * - Data are sampled on the leading (first) edge
  * - Normal-Speed mode
@@ -132,7 +132,7 @@ void usart1_init(void) {
     // USART1.CTRLA = USART_RXCIE_bm; 
     USART1.CTRLC = USART_CMODE_ASYNCHRONOUS_gc | USART_CHSIZE_8BIT_gc | USART_SBMODE_1BIT_gc;
     USART1.CTRLB = USART_RXEN_bm | USART_TXEN_bm;
-    stdout = &usart0_out_stream;
+    stdout = &usart1_out_stream;
 }
 
 int usart1_putc(const char c, FILE *stream) {
