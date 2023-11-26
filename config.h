@@ -11,6 +11,7 @@
 #include <stdio.h>
 #include <util/delay.h>
 #include <string.h>
+#include <ctype.h>
 
 /* Debug UART full duplex */
 #define USART1_BAUDRATE 115200

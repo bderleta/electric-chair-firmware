@@ -4,7 +4,6 @@
  */
 
 #include "config.h"
-#include <ctype.h>
 
 static FILE usart1_out_stream = FDEV_SETUP_STREAM(usart1_putc, NULL, _FDEV_SETUP_WRITE);
 
